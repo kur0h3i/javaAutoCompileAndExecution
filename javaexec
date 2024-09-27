@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Comprobar que hay un archivo Main con la extension java
+if ls Main.java 1>/dev/null 2>&1; then
+  # Compilar los archivos java
+  javac *.java
+
+  #Ejecutar el archivo Main
+  java Main Main.class
+else
+  echo "El archivo Main.java no existe."
+fi
